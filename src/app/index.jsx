@@ -1,5 +1,5 @@
 import React from 'react';
-import { Counter } from 'src/features/counter/view';
+import { Counter } from 'src/features/counter';
 
 import styles from './index.module.css';
 

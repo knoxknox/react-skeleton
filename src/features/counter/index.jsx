@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import * as actions from './actions';
-import styles from './view.module.css';
+import styles from './index.module.css';
 
 export const Counter = () => {
   const dispatch = useDispatch();
