@@ -12,18 +12,18 @@ export const Counter = () => {
   return (
     <div>
       <div className={styles.row}>
-        <span className={styles.value}>{count}</span>
+        <span className={styles.count}>{count}</span>
       </div>
 
       <div className={styles.row}>
-        <span className={styles.value}>Sync</span>
+        <span className={styles.label}>Sync</span>
 
         <button className={styles.button} onClick={() => dispatch(actions.decrementSync(count))}>-</button>
         <button className={styles.button} onClick={() => dispatch(actions.incrementSync(count))}>+</button>
       </div>
 
       <div className={styles.row}>
-        <span className={styles.value}>Async</span>
+        <span className={styles.label}>Async</span>
 
         <button className={styles.button} disabled={status === 'loading'} onClick={() => dispatch(actions.decrementAsync(count))}>-</button>
         <button className={styles.button} disabled={status === 'loading'} onClick={() => dispatch(actions.incrementAsync(count))}>+</button>

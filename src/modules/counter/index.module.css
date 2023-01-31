@@ -4,22 +4,23 @@
   justify-content: center;
 }
 
-.row > button {
-  margin: 0 4px;
-}
-
-.value {
-  padding: 0 8px;
+.count {
   font-size: 36px;
 }
 
+.label {
+  font-size: 22px;
+  margin-right: 4px;
+}
+
 .button {
-  padding: 0 8px;
+  width: 50px;
+  margin: 2px;
   cursor: pointer;
   font-size: 24px;
   color: rgb(112, 76, 182);
   border: 2px solid transparent;
-  background-color: rgba(112, 76, 182, 0.1);
+  background-color: rgba(112, 76, 182, 0.2);
 }
 
 .button:hover {
@@ -31,7 +32,6 @@
 }
 
 .button:disabled {
-  cursor: none;
-  border: 2px solid rgba(112, 76, 182, 0.1);
+  cursor: wait;
   background-color: rgba(112, 76, 182, 0.1);
 }
