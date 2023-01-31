@@ -15,16 +15,24 @@ export const decrementSync = (counter) => {
 
 export const incrementAsync = (counter) => {
   return async (dispatch) => {
-    dispatch(actions.onAsyncAction());
-    const response = await api.increment(counter);
-    dispatch(actions.incrementAsync(response.data.counter));
+    try {
+      dispatch(actions.onAsyncAction());
+      const response = await api.increment(counter);
+      dispatch(actions.incrementAsync(response.data.counter));
+    } catch (error) {
+      dispatch(actions.incrementAsync(counter)); // original counter
+    }
   };
 };
 
 export const decrementAsync = (counter) => {
   return async (dispatch) => {
-    dispatch(actions.onAsyncAction());
-    const response = await api.decrement(counter);
-    dispatch(actions.decrementAsync(response.data.counter));
+    try {
+      dispatch(actions.onAsyncAction());
+      const response = await api.decrement(counter);
+      dispatch(actions.decrementAsync(response.data.counter));
+    } catch (error) {
+      dispatch(actions.decrementAsync(counter)); // original counter
+    }
   };
 };
