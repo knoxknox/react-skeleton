@@ -7,7 +7,7 @@ import configureAxios from './config/axios';
 import configurePretender from './config/pretender';
 import configureReduxStore from './config/reduxStore';
 
-import App from './app';
+import App from './modules/app';
 
 const container = document.getElementById('root');
 const isDevelopment = process.env.NODE_ENV === 'development';

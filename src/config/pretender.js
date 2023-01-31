@@ -1,5 +1,5 @@
 import Pretender from 'pretender';
-import { increment, decrement } from 'src/features/counter/pretender';
+import { increment, decrement } from 'src/modules/counter/pretender';
 
 export default () => {
   const server = new Pretender(increment, decrement);
