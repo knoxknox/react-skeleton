@@ -2,7 +2,7 @@
   "name": "skeleton",
   "version": "1.0.0",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.2",
+    "@reduxjs/toolkit": "^1.9.5",
     "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -10,7 +10,7 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "cypress": "^12.5.1",
+    "cypress": "^12.10.0",
     "pretender": "^3.4.7",
     "redux-mock-store": "^1.5.4"
   },
